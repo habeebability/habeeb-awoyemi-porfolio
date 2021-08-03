@@ -73,12 +73,37 @@ header {
   transform: translate(-50%, -50%);
   display: inline-block;
   width: 300px;
-  height: 300px;
+  min-height: 300px;
   background: #212047;
   /* margin: 5px; */
-  padding: 1rem;
+  padding: 1.5rem;
   transition: transform 0.5s, background 3s ease-in-out;
 }
+
+.card .card-title, p {
+  color: white;
+ 
+}
+
+.card p {
+  margin-bottom: 2rem;
+}
+
+.card .card-title {
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.card i {
+  color: #e4bd3e;
+}
+
+.card a {
+  color: #F9D059;
+  cursor: pointer;
+}
+
 
 
 .card:nth-child(1) {
@@ -534,6 +559,29 @@ nav .brand-logo {
   font-weight: 300;
 }
 
+.my-projects {
+  
+}
+.myprojects-header span {
+  display: block;
+}
+
+.myprojects-gallery {
+  display: flex;
+}
+
+.myprojects-nav-ul {
+  display: flex;
+}
+.gallery-projects img {
+  width: 20%;
+}
+.myprojects-gallery .myprojects-nav ul{
+  display: flex;
+  width: 20px;
+  transform: rotate(90deg);
+}
+
 
 @media (min-width: 550px) {
 
@@ -616,7 +664,7 @@ nav .brand-logo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10em;
+  padding-top: 22em;
 }
 
 .heading-primary {
@@ -774,6 +822,7 @@ nav .brand-logo {
   background: #212047;
   margin: 5px;
   transition: transform 0.5s, background 3s ease-in-out;
+  /* padding: 1rem; */
 }
 .card:nth-child(1) {
   transform: translate(-170%, -50%);
